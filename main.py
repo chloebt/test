@@ -8,6 +8,7 @@ def main():
     stream = codecs.open(sys.argv[1], 'r', 'utf-8')
     for line in stream:
         print line.strip()
+        items = line.split('\t')
 
 if __name__ == '__main__':
     main()
